@@ -1,6 +1,7 @@
 import { Hero } from './../hero';
 import { Component, OnInit } from '@angular/core';
 import { HEROES } from '../mock-heroes';
+import { HeroService } from '../hero.service';
 
 @Component({
   selector: 'app-heroes',
@@ -8,22 +9,29 @@ import { HEROES } from '../mock-heroes';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
-  // hero: Hero = {
-  //   id: 1,
-  //   name: 'Windstorm'
-  // };
-
+  // 英雄清單
+  heroes: Hero[];
+  // 被選取英雄
   selectedHero: Hero;
 
-  heroes = HEROES;
+  // 注入 Service
+  // 建構式不要做 HTTP request
+  constructor(private heroService: HeroService) { }
 
-  constructor() { }
-
+  // 初始化
   ngOnInit() {
+    // 取得英雄清單
+    this.getHeroes();
   }
 
+  // 選擇英雄
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
+  }
+
+  // 取得英雄清單
+  getHeroes(): void {
+    this.heroes = this.heroService.getHeroes();
   }
 
 }

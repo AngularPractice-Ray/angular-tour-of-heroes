@@ -18,8 +18,8 @@ import { HeroDetailsComponent } from './hero-details/hero-details.component';
     FormsModule
   ],
   providers: [
-    HeroService,
-    MessageService
+    HeroService
+    // MessageService
   ],
   bootstrap: [AppComponent]
 })
