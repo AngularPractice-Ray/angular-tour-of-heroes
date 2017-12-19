@@ -5,6 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## 教學文件
 
 1. [Application Shell](/ApplicationShell.md)
+2. [The Hero Editor](/TheHeroEditor.md)
 
 ## Development server
 
