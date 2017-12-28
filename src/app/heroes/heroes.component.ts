@@ -29,9 +29,10 @@ export class HeroesComponent implements OnInit {
     this.selectedHero = hero;
   }
 
-  // 取得英雄清單
+  // 取得英雄清單(Observable)
   getHeroes(): void {
-    this.heroes = this.heroService.getHeroes();
+    this.heroService.getHeroes()
+                    .subscribe(heroes => this.heroes = heroes);
   }
 
 }
