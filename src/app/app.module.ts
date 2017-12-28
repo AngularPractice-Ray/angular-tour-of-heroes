@@ -11,7 +11,7 @@ import { HeroDetailsComponent } from './hero-details/hero-details.component';
   declarations: [
     AppComponent,
     HeroesComponent,
-    HeroDetailsComponent
+    HeroDetailsComponent,
   ],
   imports: [
     BrowserModule,

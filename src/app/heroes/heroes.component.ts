@@ -15,10 +15,10 @@ export class HeroesComponent implements OnInit {
   selectedHero: Hero;
 
   // 注入 Service
-  // 建構式不要做 HTTP request
   constructor(private heroService: HeroService) { }
 
   // 初始化
+  // HTTP request 從這裏叫用
   ngOnInit() {
     // 取得英雄清單
     this.getHeroes();
