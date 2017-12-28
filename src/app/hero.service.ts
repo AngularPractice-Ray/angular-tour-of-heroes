@@ -16,6 +16,8 @@ export class HeroService {
 
   // 取得資料
   getHeroes(): Observable<Hero[]> {
+    // Todo: send the message _after_ fetching the heroes
+    this.messageService.add('HeroService: fetched heroes');
     return of(HEROES);
   }
 }
