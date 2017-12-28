@@ -7,6 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 1. [Application Shell](/ApplicationShell.md)
 2. [The Hero Editor](/TheHeroEditor.md)
 3. [Display a Heroes List](/DisplayHeroesList.md)
+4. [Service](/Services.md)
 
 ## Development server
 
