@@ -1,3 +1,4 @@
+import { MessageService } from './message.service';
 import { Injectable } from '@angular/core';
 import { Hero } from './hero';
 import { HEROES } from './mock-heroes';
@@ -11,7 +12,7 @@ import { of } from 'rxjs/Observable/of';
 @Injectable()
 export class HeroService {
 
-  constructor() { }
+  constructor(private messageService: MessageService) { }
 
   // 取得資料
   getHeroes(): Observable<Hero[]> {
