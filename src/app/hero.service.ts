@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Hero } from './hero';
 import { HEROES } from './mock-heroes';
 import { Observable } from 'rxjs/Observable';
-import { of } from 'rxjs/Observable/of';
+import { of } from 'rxjs/observable/of';
 
 // Service 用來和後端溝通
 // Service 可注入到任何地方，範例注入到 AppModule - providers
